@@ -1,1 +1,32 @@
 @import 'tailwindcss';
+
+@theme {
+	--color-teal-green: #135e4b;
+	--color-off-white: #f5f5f5;
+	--color-light-gray: #e0e0e0;
+	--color-coral: #ff6b6b;
+	--color-dark-gray: #2c2c2c;
+}
+
+.page-link {
+	@apply hover:text-teal-green border-b-2 border-transparent text-sm font-medium md:text-base lg:text-lg;
+}
+
+.active-page-link {
+	@apply border-teal-green border-b-2 border-dashed;
+}
+
+@layer base {
+	* {
+		@apply text-dark-gray;
+	}
+
+	#root {
+		@apply size-full;
+	}
+
+	html,
+	body {
+		@apply size-full;
+	}
+}
