@@ -5,6 +5,8 @@
 	--color-off-white: #f5f5f5;
 	--color-light-gray: #e0e0e0;
 	--color-coral: #ff6b6b;
+	--color-coral-light: #ff8585;
+	--color-coral-dark: #da5c5c;
 	--color-dark-gray: #2c2c2c;
 }
 
@@ -16,11 +18,27 @@
 	@apply border-teal-green border-b-2 border-dashed;
 }
 
-@layer base {
-	* {
-		@apply text-dark-gray;
-	}
+.page-intro-section {
+	@apply bg-teal-green text-off-white flex p-4 md:p-8 lg:p-12;
+}
 
+.hero-section {
+	@apply flex-col items-center justify-center;
+}
+
+.page-main-section {
+	@apply text-dark-gray flex p-12 md:p-24;
+}
+
+.home-summary {
+	@apply flex-wrap items-center justify-center gap-8 text-base md:gap-12 md:text-lg lg:gap-24 lg:text-xl;
+}
+
+.link-btn {
+	@apply bg-coral text-dark-gray hover:bg-coral-light active:bg-coral-dark rounded-md px-8 py-2 text-sm md:text-base lg:text-lg;
+}
+
+@layer base {
 	#root {
 		@apply size-full;
 	}
@@ -28,5 +46,13 @@
 	html,
 	body {
 		@apply size-full;
+	}
+
+	body {
+		@apply bg-off-white;
+	}
+
+	h1 {
+		@apply p-2 text-xl md:text-2xl lg:text-3xl;
 	}
 }

@@ -11,11 +11,8 @@ export function Header() {
 	const isActive = (path: string) => location.pathname === path;
 
 	return (
-		<header className="bg-off-white flex items-center justify-center p-1 md:p-2 lg:p-4">
-			<nav
-				className="sticky top-0 flex items-start gap-8 p-4 md:gap-20 lg:gap-40"
-				aria-label="Main navigation"
-			>
+		<header className="bg-off-white text-dark-gray sticky top-0 flex items-center justify-center p-1 md:p-2 lg:p-4">
+			<nav className="flex items-start gap-8 p-4 md:gap-20 lg:gap-40" aria-label="Main navigation">
 				{links.map(({ label, path }) => (
 					<Link
 						key={path}
