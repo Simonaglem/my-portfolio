@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
-import profileImg from '../assets/profile.png';
+import profileImg from '../assets/profile.jpg';
 
 export const Route = createFileRoute('/')({
 	component: RouteComponent,
