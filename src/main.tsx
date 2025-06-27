@@ -12,6 +12,13 @@ declare module '@tanstack/react-router' {
 	}
 }
 
+const redirect = sessionStorage.redirect;
+
+if (redirect) {
+	sessionStorage.removeItem('redirect');
+	window.history.replaceState(null, '', redirect);
+}
+
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<RouterProvider router={router} />
