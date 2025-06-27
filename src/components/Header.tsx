@@ -8,7 +8,8 @@ const links = [
 
 export function Header() {
 	const { location } = useRouterState();
-	const isActive = (path: string) => location.pathname === path;
+	const isActive = (path: string) =>
+		location.pathname === import.meta.env.BASE_URL + path.replace(/^\//, '');
 
 	return (
 		<header className="bg-off-white text-dark-gray sticky top-0 flex items-center justify-center p-1 md:p-2 lg:p-4">
