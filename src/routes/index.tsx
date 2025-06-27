@@ -13,20 +13,20 @@ function RouteComponent() {
 				<em className="mb-6 p-2 text-sm md:text-base lg:text-lg">
 					Front-End Developer in the Making
 				</em>
-				<Link to="/projects" className="link-btn">
-					See My Work &#8674;
+				<Link to="/about" className="link-btn">
+					Learn More About Me &#x27F6;
 				</Link>
 			</section>
 			<section className="page-main-section home-summary">
 				<img
 					src={profileImg}
-					alt="Profile Photo"
+					alt="Simona Glemžaitė Photo"
 					className="max-w-52 rounded-full md:max-w-60 lg:max-w-64"
 				/>
-				<p className="max-w-48 md:max-w-60 lg:max-w-80">
+				<p className="max-w-48 text-center md:max-w-60 md:text-start lg:max-w-80">
 					Aspiring front-end developer learning to build the web, one pixel at a time.
-					<br /> After working with ERP systems, I'm channeling my creativity into clean, functional
-					user interfaces.
+					<br /> After working with Microsoft ERP systems, I'm now channeling my creativity into
+					clean, functional, and user-focused interfaces.
 				</p>
 			</section>
 		</section>
